@@ -47,7 +47,7 @@ input[type=text],input[type=number],input[type=email],input[type=password]
 input:focus
 {
     background-color: rgb(215, 213, 213);
-    transform: scale(1.01);G
+    transform: scale(1.01);
 }
 
 input:focus::placeholder
