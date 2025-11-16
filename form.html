@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form name="form" onsubmit="return validate()">
+        <section>
+        <h1>Fill the form</h1>
+        <label>Name</label><input type="text" name="name" required>
+        <br/>
+        <label>Surname</label><input type="text" name="surname" required>
+        <br/>
+        <label>Mail</label><input type="email" name="mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="example:lucy-walker@mydomain.net" required>
+        <br/>
+        <label>Password</label><input type="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" placeholder="8+ 1 upper/1 lower 1 digit." required>
+        <br/>
+        <label>Repeat password</label><input type="password" name="password2" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+        <br/>
+        <input type="checkbox" name="term" required><label for="term">I agree to the terms and conditions.</label>
+        <br/>
+        <input type="submit" value="submit">
+        </section>
+    </form>
+</body>
+</html>
